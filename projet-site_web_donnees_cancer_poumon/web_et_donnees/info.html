@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Information</title>
+<link rel="stylesheet" href="style/information.css">  
+</head>
+<body>
+
+<header>
+         <!-- MENU LATERAL -->
+        <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="stat.html">Statistiques</a></li>
+                <li><a href="info.html">Informations</a></li>
+                <li><a href="prevention.html">Prévention</a></li>
+                <li><a href="carte.html">Carte interactive</a></li>
+                <li><a href="formulaire.html">Test personnel</a></li>
+            </ul>
+        </nav>
+        <button class="home-btn" onclick="window.location.href='index.html'">
+          <img src="haut_de_page/accueil_logo.png" alt="Accueil">
+          <span>Accueil</span>
+        </button>
+    </header>
+
+    <h1>Organisation de recherche <br> sur le cancer du poumon</h1>
+
+  <h2>Cancer, tabagisme, pollution : tout <br>comprendre</h2>
+  <div class="cards">
+  <a href="cancer_du_poumon.html">
+    <div class="card">
+      <a href="cancer_du_poumon.html"><img src="images/poumon.png" alt="Cancer du poumon"></a>
+      <p><a href="cancer_du_poumon.html">LE CANCER DU POUMON</a></p>
+      <p>Renseignez-vous sur le cancer du poumon.</p>
+    </div></a>
+
+  <a href="pollution.html"><div class="card">
+      <a href="pollution.html"><img src="images/pollution.png" alt="Pollution de l’air"></a>
+      <p><a href="pollution.html">LA POLLUTION DE L’AIR</a></p>
+      <p>Découvrez les effets de la pollution sur la santé respiratoire.</p>
+    </div></a>
+
+  <a href="tabagisme.html"><div class="card">
+      <a href="tabagisme.html"><img src="images/tabagisme.png" alt="Tabagisme"></a>
+      <p><a href="tabagisme.html">LE TABAGISME</a></p>
+      <p>Renseignez-vous sur le tabagisme et ses effets nocifs.</p>
+    </div></a>
+  </div>
+
+  <footer>
+        <div class="contact">
+            <h3>Aide & Contact</h3>
+            <a href="contact.html">Nous joindre</a><br>
+            <a href="contact.html#faq">Questions fréquentes</a>
+
+            <div class="icons">
+                <img src="bas_de_page/logo_x.png" alt="X">
+                <img src="bas_de_page/logo_insta.png" alt="Instagram">
+                <img src="bas_de_page/logo_youtube.png" alt="Youtube">
+                <img src="bas_de_page/logo_linkedin.png" alt="Linkedin">
+            </div>
+        </div>
+        <div class="footer-logo">
+            <p>Organisation de<br> recherche sur le<br> cancer du poumon</p>
+            <img src="bas_de_page/logo_poumon.png" alt="Logo organisation">
+            
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const sidebar = document.getElementById('sidebar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            sidebar.classList.toggle('open');
+        });
+    </script>
+     <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("closed");
+    }
+
+    const links = document.querySelectorAll(".sidebar a");
+    links.forEach(link => {
+      link.addEventListener("click", function() {
+        links.forEach(l => l.classList.remove("active"));
+        this.classList.add("active");
+      });
+    });
+  </script>
+
+  </body>
+  </html>

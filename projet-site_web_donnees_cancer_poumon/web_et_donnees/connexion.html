@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Connexion - ORSCP</title>
+    <link rel="stylesheet" href="style/style_connexion.css">
+</head>
+<body>
+
+<header>
+    <button class="home-btn" onclick="window.location.href='index.html'">
+        <img src="haut_de_page/accueil_logo.png" alt="Accueil">
+        <span>Accueil</span>
+    </button>
+</header>
+
+<h2>Se connecter</h2>
+<form method="POST" action="connecter.php">
+    <p>Email :<br><input type="email" name="email" required></p>
+    <p>Mot de passe :<br><input type="password" name="mdp" required></p>
+    <p><button type="submit">Se connecter</button></p>
+
+        <div class="footer-link">
+        Si vous avez déjà un compte : <a href="inscription.html">S'inscrire</a>
+    </div>
+</form>
+
+</body>
+</html>

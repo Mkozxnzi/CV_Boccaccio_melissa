@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Carte</title>
+        <title>Cancer_du_poumon</title>
+    <link rel="stylesheet" href="style/carte.css">
+
+</head>
+
+    
+
+<body>
+    <header>
+         <!-- MENU LATERAL -->
+        <div class="menu" id="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav id="sidebar">
+            <ul>
+                <li><a href="stat.html">Statistiques</a></li>
+                <li><a href="info.html">Informations</a></li>
+                <li><a href="prevention.html">Prévention</a></li>
+                <li><a href="carte.html">Carte interactive</a></li>
+                <li><a href="formulaire.html">Test personnel</a></li>
+            </ul>
+        </nav>
+        <div class="home-btn-container">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+            <img src="haut_de_page/accueil_logo.png" alt="Accueil">
+            <span>Accueil</span>
+            </button>
+        </div>
+    </header>
+
+    <h1>Organisation de recherche <br> sur le cancer du poumon</h1>
+
+    <h2>Cartes interactives</h2>
+
+
+    
+
+<div id="cartes">
+    <h3 class="soustitre">Pollution de l’air (PM2.5) – données 2010 à 2018</h3>
+<iframe class="folium-map" src="PM25_interactive_clean.html"></iframe>
+
+<h3 class="soustitre">Pays où le cancer du poumon est le plus mortel chez les femmes (2018)</h3>
+<iframe class="folium-map" src="death_lung_female_map.html" ></iframe>
+
+<h3 class="soustitre">Pays où le cancer du poumon est le plus mortel chez les hommes (2018)</h3>
+<iframe class="folium-map" src="death_lung_male_map.html" ></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="contact">
+            <h3>Aide & Contact</h3>
+            <a href="contact.html">Nous joindre</a><br>
+            <a href="contact.html#faq">Questions fréquentes</a>
+
+            <div class="icons">
+                <img src="bas_de_page/logo_x.png" alt="X">
+                <img src="bas_de_page/logo_insta.png" alt="Instagram">
+                <img src="bas_de_page/logo_youtube.png" alt="Youtube">
+                <img src="bas_de_page/logo_linkedin.png" alt="Linkedin">
+            </div>
+        </div>
+        <div class="footer-logo">
+            <p>Organisation de<br> recherche sur le<br> cancer du poumon</p>
+            <img src="bas_de_page/logo_poumon.png" alt="Logo organisation">
+            
+        </div>
+    </footer>
+
+    <script>
+        const menu = document.getElementById('menu');
+        const sidebar = document.getElementById('sidebar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('active');
+            sidebar.classList.toggle('open');
+        });
+    </script>
+
+
+
+
+
+</html>
