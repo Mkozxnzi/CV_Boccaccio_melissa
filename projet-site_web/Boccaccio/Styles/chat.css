@@ -1,0 +1,115 @@
+/* CHAT BOX */
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 260px;
+    background: #220000;
+    border: 2px solid #660000;
+    border-radius: 10px;
+    font-family: 'Papyrus', 'Copperplate', fantasy;
+    color: #ffeeee;
+    box-shadow: 0 0 10px #ff3300;
+    z-index: 9999;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+/* MINI-BOUTON RÉDUIT */
+#chat-mini {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    background: #990000;
+    border: 2px solid #660000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+    z-index: 9999;
+    box-shadow: 0 0 8px #ff3300;
+    transition: transform 0.2s ease;
+}
+
+#chat-mini:hover {
+    transform: scale(1.15);
+}
+
+#chat-header {
+    background: linear-gradient(to right, #990000, #660000);
+    padding: 6px 10px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #440000;
+}
+
+#chat-header button {
+    background: none;
+    border: none;
+    color: #ffeeee;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+/* Contenu */
+#chat-content {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+}
+
+#chat-messages {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 6px 10px;
+    border-radius: 12px;
+    font-size: 0.9em;
+    line-height: 1.3em;
+}
+
+.left {
+    background: #330000;
+    border: 1px solid #660000;
+    align-self: flex-start;
+}
+
+.right {
+    background: #990000;
+    color: #ffffcc;
+    align-self: flex-end;
+}
+
+#chat-input-box {
+    display: flex;
+    border-top: 1px solid #440000;
+}
+
+#chat-input {
+    flex: 1;
+    border: none;
+    padding: 8px;
+    background: #330000;
+    color: #ffeeee;
+}
+
+#chat-send {
+    border: none;
+    background: #ff3300;
+    color: #ffffcc;
+    padding: 8px 12px;
+    cursor: pointer;
+}

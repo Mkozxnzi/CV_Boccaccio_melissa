@@ -1,0 +1,169 @@
+body {
+    background: radial-gradient(circle at center, #660000, #330000, #000000);
+    font-family: 'Papyrus', 'Copperplate', fantasy;
+    color: #ffdddd;
+    text-align: center;
+    animation: emberGlow 15s infinite alternate;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #000000;
+    text-shadow: 0 0 10px #ff0000, 2px 2px 5px #660000;
+    background: linear-gradient(to right, #990000, #ff0000);
+    padding: 20px;
+    border: 5px groove #660000;
+
+    animation: flameFlicker 1.2s infinite alternate;
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #220000;
+    box-shadow: 0 0 20px #ff3300;
+}
+
+th, td {
+    border: 2px solid #ff0000;
+    padding: 12px;
+    font-size: 1.2em;
+    color: #ffeeee;
+    background-color: #440000;
+}
+
+th {
+    background-color: #990000;
+    color: #ffffcc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button, input[type="submit"] {
+    background: linear-gradient(to bottom, #ff3300, #990000);
+    color: #ffffcc;
+    font-size: 1.2em;
+    padding: 10px 25px;
+    border: 3px ridge #660000;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover, input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ff0000;
+}
+
+a {
+    color: #ff6666;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+    text-shadow: 0 0 5px #ff0000;
+}
+
+@keyframes flameFlicker {
+    0% { text-shadow: 0 0 5px #ff3300; }
+    100% { text-shadow: 0 0 15px #ff6600; }
+}
+
+@keyframes emberGlow {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+input.valid {
+    border: 2px solid green;
+}
+input.invalid {
+    border: 2px solid red;
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+}
+
+#feedback {
+    font-size: 1.2em;
+    text-shadow: 0 0 10px #ff0000;
+    animation: flameFlicker 1s infinite alternate;
+}
+
+@keyframes flameFlicker {
+    0% { text-shadow: 0 0 5px #ff3300; }
+    100% { text-shadow: 0 0 15px #ff6600; }
+}
+/* Boîte du chat */
+#chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 330px;
+    height: 430px;
+    background: #f7f7f7;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial;
+    z-index: 999999;
+}
+
+/* Zone messages */
+#chat-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bulle message */
+.message {
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 14px;
+    font-size: 14px;
+    line-height: 1.3em;
+}
+
+/* Message d'un autre utilisateur (gauche) */
+.left {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    align-self: flex-start;
+}
+
+/* Message de l'utilisateur connecté (droite) */
+.right {
+    background: #0078ff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Barre d’envoi */
+#chat-input-box {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+#chat-input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    border-radius: 0 0 0 10px;
+}
+
+#chat-send {
+    border: none;
+    background: #0078ff;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 0 10px 0;
+}

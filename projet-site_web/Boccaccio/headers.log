@@ -1,0 +1,11 @@
+Array
+(
+    [Host] => localhost
+    [User-Agent] => Stripe/1.0 (+https://stripe.com/docs/webhooks)
+    [Content-Length] => 3980
+    [Accept] => */*; q=0.5, application/xml
+    [Cache-Control] => no-cache
+    [Content-Type] => application/json; charset=utf-8
+    [Stripe-Signature] => t=1765028591,v1=41d3e0e336d6b2ec20909f1ac55e108163445e3d3618265ed156941cc74bdfbc,v0=6958e590e0785c030f90b81bedb6ee55e8c7fa1216dbf589bed2f87e0e0828e4
+    [Accept-Encoding] => gzip
+)
