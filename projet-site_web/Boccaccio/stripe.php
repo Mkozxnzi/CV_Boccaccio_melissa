@@ -5,4 +5,3 @@
 require_once('vendor/autoload.php'); // charge Stripe via Composer
 
 $stripe = new \Stripe\StripeClient('Clé_api'); 
-
