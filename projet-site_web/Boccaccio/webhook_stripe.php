@@ -3,7 +3,7 @@ require_once 'vendor/autoload.php';
 require_once 'bd.php';
 require_once 'stripe.php';
 
-$endpoint_secret = "whsec_2b61bededcc2e46d9b6b755303fee0018af6dcdcaf08f4bb3880d24f5bdb69a0";
+$endpoint_secret = "";
 
 $payload = file_get_contents('php://input');//corps de la requête envoyée par Strip
 $sig_header = $_SERVER['HTTP_STRIPE_SIGNATURE'] ?? '';// signature envoyé par stripe 
