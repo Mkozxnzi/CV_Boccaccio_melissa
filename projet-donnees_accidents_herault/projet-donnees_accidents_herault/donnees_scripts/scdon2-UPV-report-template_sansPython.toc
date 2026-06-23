@@ -1,0 +1,21 @@
+\contentsline {chapter}{\numberline {Chapitre 1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Responsabilités et composition de l'équipe}{1}{section.1.2}%
+\contentsline {chapter}{\numberline {Chapitre 2}Base de données}{2}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Provenance des données}{2}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Orientation de l'étude}{2}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Descriptif des tables}{3}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Modèles MCD et MOD}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Import des données \^{}}{6}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Requêtes réalisées}{6}{section.2.6}%
+\contentsline {chapter}{\numberline {Chapitre 3}Matériel et Méthodes}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Logiciels}{13}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Modélisation statistique}{13}{section.3.2}%
+\contentsline {chapter}{\numberline {Chapitre 4}Analyse exploratoire des données}{15}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{15}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Graphiques et Tableaux}{15}{section.4.2}%
+\contentsline {chapter}{\numberline {Chapitre 5}Analyse et Résultats}{22}{chapter.5}%
+\contentsline {chapter}{\numberline {Chapitre 6}Discussion}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {Chapitre 7}Conclusion et perspectives}{27}{chapter.7}%
+\contentsline {chapter}{Annexes}{29}{chapter*.5}%
+\contentsline {section}{\textbf {Codes}}{29}{section*.6}%

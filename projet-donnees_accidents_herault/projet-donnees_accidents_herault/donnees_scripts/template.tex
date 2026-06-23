@@ -1,0 +1,142 @@
+\documentclass[mstat,12pt]{unswthesis}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% OK...Now we get to some actual input.  The first part sets up
+% the title etc that will appear on the front page
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Projet réalisé par\\[0.5cm] l'équipe $team$ du groupe de $groupeTD$ \\[3cm]$title$}
+
+\authornameonly{$for(author)$$author$ $endfor$}
+
+\author{\Authornameonly}
+
+\copyrightfalse
+\figurespagefalse
+\tablespagefalse
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  And now the document begins
+%  The \beforepreface and \afterpreface commands puts the
+%  contents page etc in
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\input{header.tex}
+
+\renewcommand{\contentsname}{Table des matières}
+
+\renewcommand{\chaptername}{Chapitre}
+
+
+
+
+\begin{document}
+
+\beforepreface
+
+%\afterpage{\blankpage}
+
+% plagiarism
+
+\prefacesection{Déclaration de non plagiat}
+
+
+\vskip 2pc \noindent Nous déclarons que ce rapport est le fruit de notre seul travail, à part lorsque cela est indiqué  explicitement. 
+
+\vskip 2pc  \noindent Nous acceptons que la personne évaluant ce rapport puisse, pour les besoins de cette évaluation:
+\begin{itemize}
+\item la reproduire et en fournir une copie à un autre membre de l'université; et/ou,
+\item en communiquer une copie à un service en ligne de détection de plagiat (qui pourra en retenir une copie pour les besoins d'évaluation future).
+\end{itemize}
+
+\vskip 2pc \noindent Nous certifions que nous avons lu et compris les règles ci-dessus.\vspace{24pt}
+
+\vskip 2pc \noindent En signant cette déclaration, nous acceptons ce qui précède.
+\vskip 2pc \noindent
+$for(author)$
+Signature: \rule{7cm}{0.25pt} \hfill Date: \rule{4cm}{0.25pt} \\[1cm]
+$endfor$
+\vskip 1pc
+
+%\textcolor{red}{Mettre à jour la date.}
+
+{\bigskip\bigskip\bigskip\noindent} \today
+%\afterpage{\blankpage}
+
+% Acknowledgements are optional
+
+
+\prefacesection{Remerciements}
+
+{\bigskip}$for(Acknowledgements)$$Acknowledgements$\\[1cm] $endfor$
+
+{\bigskip\bigskip\bigskip\noindent} \today
+
+%\afterpage{\blankpage}
+
+% Abstract
+
+\prefacesection{Résumé}
+
+  L’analyse des accidents de la route constitue un enjeu majeur pour orienter les politiques de sécurité et de prévention. 
+
+\vspace{1em}
+
+Ce projet porte sur les accidents survenus dans le département de l’Hérault en 2023, avec pour objectif d’identifier les facteurs associés à la gravité des blessures.
+
+\vspace{1em}
+
+L’étude s’appuie sur l’exploitation de données ouvertes, nettoyées et croisées entre plusieurs sources (usagers, véhicules, lieux et caractéristiques liés accidents). Trois grandes familles de facteurs ont été examinées : humains (âge, sexe, équipement), environnementaux (météo, luminosité) et liés à l’infrastructure routière (type de route, vitesse maximale autorisée, type de collision).
+
+\vspace{1em}
+
+Certains facteurs se sont révélés être très influents sur la gravité des accidents, notamment la plupart des facteurs liés à la route. Mais à l'inverse, d'autres caractéristiques semblent moins discriminantes sur le plan statistique.
+
+\vspace{1em}
+
+Ces observations permettent de formuler des recommandations concrètes en matière d’aménagement, de réglementation et de sensibilisation des usagers.
+
+%\afterpage{\blankpage}
+
+
+\afterpreface
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Now we can start on the first chapter
+% Within chapters we have sections, subsections and so forth
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\afterpage{\blankpage}
+
+
+$body$
+
+
+
+
+
+
+
+\end{document}
+
+
